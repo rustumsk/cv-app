@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$roboto-font: 'Roboto';
+$main-color: #FCFFE0;
+$secondary-color: #F5DAD2;
+$tertiary-color: #BACD92;
+$fourth-color: #75A47F;
+
+@mixin input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    font-family: $roboto-font;
+    gap: .5rem;
+
+    label {
+        font-size: 1.5rem;
+        width: 40%;
+        border-bottom: solid 2px black;
+        font-family: $roboto-font;
+    }
+
+    input {
+        background-color: $secondary-color;
+        height: 3rem;
+        outline: none;
+        font-size: 1.3rem;
+        margin-left: .5rem;
+        border: none;
+        border-bottom: .1rem solid black;
+        font-family: $roboto-font;
+
+        &:hover {
+            border-bottom: .1rem solid red;
+        }
+
+        &:active {
+            border-bottom: .1rem solid green;
+        }
+    }
+}

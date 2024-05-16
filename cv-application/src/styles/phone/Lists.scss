@@ -1,0 +1,12 @@
+
+@media (max-width: 480px) {
+    .eL ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .eL > ul > li{
+        border-bottom: solid black 2px;
+        font-size: 1.2rem;
+    }
+}
