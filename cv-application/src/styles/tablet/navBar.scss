@@ -1,0 +1,23 @@
+@import '../variables';
+@media (max-width: 754px) { 
+    .head{
+        background-color: $fourth-color;
+        height: 5rem;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+@media (max-width: 1280px) { 
+    .head{
+        background-color: $fourth-color;
+        height: 5rem;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        color: white;
+    }
+}
+

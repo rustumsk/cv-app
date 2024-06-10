@@ -1,6 +1,6 @@
 @import '../variables'; //importing mixins from this import.
 
-@media (max-width: 480px) {
+@media (min-width: 1281px) {
     .btns{
         display: flex;
         gap: 5px;

@@ -1,0 +1,32 @@
+@import '../variables'; //importing mixins from this import.
+
+@media (min-width: 1281px) {
+    .in-cont{
+        flex: 1;
+        padding: 2rem;
+        padding-bottom: 0px;
+        border-right: solid 2px black;
+        .head{
+            background-color: $fourth-color;
+            display: grid;
+            place-content: center;
+            font-size: 2rem;
+            font-family: 'Roboto';
+            margin-bottom: 1rem;
+        }
+    }
+    .out-cont{
+        flex: 1;
+        padding: 2rem;
+        padding-bottom: 0px;
+        border-right: solid 2px black;
+        .head{
+            background-color: $fourth-color;
+            display: grid;
+            place-content: center;
+            font-size: 2rem;
+            font-family: 'Roboto';
+            margin-bottom: 1rem;
+        }
+    }
+}

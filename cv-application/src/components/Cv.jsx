@@ -1,6 +1,8 @@
 import '../styles/phone/cv.scss';
+import '../styles/tablet/cv.scss';
+import '../styles/desktop/cv.scss';
 
-export default function Cv({fName,lName,email,num,exArr,eArr}){
+export default function Cv({fName,lName,email,num,eArr,exArr}){
     return(
         <div className="cv-container">
             <header className="eN">

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import ExpList from "./expList";
 import ExList from "./exList";
-export default function Experience(exArr,setExArr,handleSubmit){
+export default function Experience({exArr,setExArr}){
     const [exp,setExp] = useState(false);
     const [expList, setExpList] = useState([]);
     const [hasExp,setHasExp] = useState(false);
@@ -25,15 +25,13 @@ export default function Experience(exArr,setExArr,handleSubmit){
                 expList={expList}
             />
             <ExpList
-                exArr={exArr}
-                setExArr={setExArr}
-                handleSubmit={handleSubmit}
                 exp={exp}
                 handleClick={handleClick}
-                expList = {expList}
                 setExpList={setExpList}
                 setHasExp={setHasExp}
-                hasExp = {hasExp}
+                hasExp = {hasExp} 
+                exArr={exArr}
+                setExArr={setExArr}
             />
         </>
     )

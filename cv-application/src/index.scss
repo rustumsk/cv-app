@@ -18,5 +18,55 @@
 @media (max-width: 767px) {
   body{
     background-color: red;
+    height: 100vh;
+    margin: 0;
+  }
+  #root{
+    height: 100%;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1024px) {
+  body{
+    background-color: red;
+    height: 100vh;
+    margin: 0;
+  }
+  #root{
+    height: 100%;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1280px) {
+  body{
+    background-color: red;
+    height: 100vh;
+    margin: 0;
+  }
+  #root{
+    height: 100%;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+@media (min-width: 1281px) {
+  body{
+    background-color: red;
+    height: 100vh;
+    margin: 0;
+  }
+  #root{
+    height: 100%;
+    background-color: $main-color;
+    display: flex;
+    overflow: scroll;
   }
 }

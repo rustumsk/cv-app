@@ -1,5 +1,6 @@
 import '../styles/phone/buttons.scss';
-
+import '../styles/tablet/buttons.scss';
+import '../styles/desktop/buttons.scss';
 export default function Buttons(){
     const fNameInput = document.querySelector("#first-name");
     const lNameInput = document.querySelector("#last-name");

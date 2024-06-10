@@ -1,0 +1,7 @@
+@import '../variables'; //importing mixins from this import.
+
+@media (min-width: 1281px) {
+    .head{
+        height: 5rem;
+    }
+}

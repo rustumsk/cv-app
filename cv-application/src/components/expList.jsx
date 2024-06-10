@@ -1,19 +1,22 @@
 import { useState } from "react";
 import ACButtons from "./acButtons";
 
-export default function ExpList({exArr,setExArr,exp,handleClick,setExpList,setHasExp}){
+export default function ExpList({exp,handleClick,setExpList,setHasExp,exArr,setExArr}){
     const [cName,setCName] = useState("");
     const [comFrom, setComFrom] = useState("");
     const [comTo, setComTo] = useState(""); 
-    const [position,setPosition] = useState("");
+    const [pos, setPos] = useState("");
     const [respon, setRespon] = useState("");
 
+    function handlePos(e){
+        setPos(e.target.value);
+        console.log(pos);
+    }
     function handleRespon(e){
-        setRespon(e.target.value)
+        setRespon(e.target.value);
+        console.log(respon)
     }
-    function handlePosition(e){
-        setPosition(e.target.value)
-    }
+
     function handleCChange(e){
         setCName(e.target.value);
     }
@@ -29,9 +32,9 @@ export default function ExpList({exArr,setExArr,exp,handleClick,setExpList,setHa
     }
     function handleAdd(e) {
         e.preventDefault();
-        setExpList(prevState => [...prevState, {cName,comFrom,comTo}]);
-        setExArr(prevState => [...prevState, {cName,comFrom,comTo,position,respon}])
         console.log(exArr)
+        setExArr(prevState => [...prevState, {cName,comFrom,comTo,pos,respon}]);
+        setExpList(prevState => [...prevState, {cName,comFrom,comTo}]);
         setHasExp(true);
     }
     if(exp){
@@ -44,7 +47,7 @@ export default function ExpList({exArr,setExArr,exp,handleClick,setExpList,setHa
                     </div>
                     <div className="p">
                         <label htmlFor="pos">Position or Title</label>
-                        <input type="text" name="pos" id="pos" onChange={handlePosition} placeholder="Ex. Manager." />
+                        <input type="text" name="pos" id="pos" onChange={handlePos} placeholder="Ex. Manager." />
                     </div>
                     <div className="r">
                         <label htmlFor="res">Responsibilites</label>

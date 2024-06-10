@@ -1,4 +1,6 @@
 import '../styles/phone/acButtons.scss';
+import '../styles/tablet/acButtons.scss';
+import '../styles/desktop/acButtons.scss';
 
 //Add and Cancel buttons for the education and experience components.
 export default function ACButtons({handleAdd,handleClick}){

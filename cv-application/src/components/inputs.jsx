@@ -1,6 +1,8 @@
 import '../styles/phone/inputs.scss';
-import Educ from './education.jsx'
-import Experience from './experience.jsx';
+import '../styles/tablet/inputs.scss';
+import '../styles/desktop/inputs.scss';
+import Educ from './education'
+import Exp from './experience'
 export default function Inputs({setFName,setLName,setEMail,setNum,eArr,setEArr,exArr,setExArr}){
     
     function handleNum(e){
@@ -38,9 +40,9 @@ export default function Inputs({setFName,setLName,setEMail,setNum,eArr,setEArr,e
                     eArr={eArr}
                     setEArr={setEArr}
                 />
-                <Experience
-                    exArr ={exArr}
-                    setExArr = {setExArr}
+                <Exp 
+                    exArr={exArr}
+                    setExArr={setExArr}
                 />
             </form>
         </section>

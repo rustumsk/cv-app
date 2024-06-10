@@ -1,4 +1,6 @@
 import '../styles/phone/Lists.scss';
+import '../styles/tablet/Lists.scss';
+import '../styles/desktop/Lists.scss';
 export default function EList({hasEducation,eList}){
     return(
         <>
